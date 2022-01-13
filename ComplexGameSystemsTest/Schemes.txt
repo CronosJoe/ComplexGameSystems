@@ -1,0 +1,16 @@
+Figure out complex game system
+
+Random Map loader?
+Raycast inventory system
+Draggable object system
+
+I want it to be a system designed for 2D, I don't want to deal with 3d support
+
+Inventory system:
+Select and drag items to rearrange them.
+Parameters for how many items can be stored and if they have the same ID how many can be "stacked"
+A delete/sell function for the inventory
+creating functionality to add items to it will be a strech goal (a shop example or something)
+
+Possible resources to read: https://medium.com/@yonem9/create-an-unity-inventory-part-1-basic-data-model-3b54451e25ec
+https://www.youtube.com/watch?v=_IqTeruf3-s
