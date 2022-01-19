@@ -14,3 +14,4 @@ creating functionality to add items to it will be a strech goal (a shop example 
 
 Possible resources to read: https://medium.com/@yonem9/create-an-unity-inventory-part-1-basic-data-model-3b54451e25ec
 https://www.youtube.com/watch?v=_IqTeruf3-s
+https://forum.unity.com/threads/display-a-list-class-with-a-custom-editor-script.227847/

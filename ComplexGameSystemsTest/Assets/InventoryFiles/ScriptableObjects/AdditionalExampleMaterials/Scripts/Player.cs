@@ -18,6 +18,6 @@ public class Player : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        inventory.Container.Clear(); //let's you clear the items in an inventory
+        //inventory.ClearInventory(); //this was made to test a feature keeping commented in case I add input
     }
 }

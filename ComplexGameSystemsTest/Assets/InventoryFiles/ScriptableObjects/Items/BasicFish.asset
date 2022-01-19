@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d538e1a415c9b47b08e91241a02d6c, type: 3}
   m_Name: BasicFish
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 5016163299598576490, guid: 1a3bc4c2a8cfd414e8072341664a93a6, type: 3}
   type: 0
   description: The basic fish created simply to show people how to put it into their
     inventory nothing more nothing less.

@@ -22,4 +22,8 @@ public class InventoryObject : ScriptableObject
             Container.Add(new InventorySlot(_item, _amount));
         }
     }
+    public void ClearInventory() 
+    {
+        Container.Clear();
+    }
 }
