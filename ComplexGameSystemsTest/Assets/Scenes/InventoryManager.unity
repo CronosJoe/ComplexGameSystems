@@ -613,7 +613,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004412567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.147, y: 2.61, z: 22.482368}
+  m_LocalPosition: {x: -3.04, y: 2.61, z: 22.482368}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 271321905}
@@ -706,6 +706,7 @@ GameObject:
   - component: {fileID: 1168645079}
   - component: {fileID: 1168645081}
   - component: {fileID: 1168645080}
+  - component: {fileID: 1168645082}
   m_Layer: 5
   m_Name: InventoryScreen
   m_TagString: Untagged
@@ -770,6 +771,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168645078}
   m_CullTransparentMesh: 0
+--- !u!114 &1168645082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168645078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29fcba9cb81d2184fb398d93271929b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryToDisplay: {fileID: 11400000, guid: 23065508081e6c541b597122d7f2cd1b, type: 2}
+  XStart: -100
+  YStart: 100
+  ColumnCount: 4
+  SpaceBetweenItemsXAxis: 30
+  SpaceBetweenItemsYAxis: 30
 --- !u!1 &1416292970
 GameObject:
   m_ObjectHideFlags: 0

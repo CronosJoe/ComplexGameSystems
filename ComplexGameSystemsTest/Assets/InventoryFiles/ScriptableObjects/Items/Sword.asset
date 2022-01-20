@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a95827bdf4d70a47b507de80a48f952, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 6765640736270350967, guid: dbf52b16e3521f94a95fab17fdb9f29c, type: 3}
   type: 1
   description: A sword forged by the programmer to show you how to add stuff to your
     inventory.
