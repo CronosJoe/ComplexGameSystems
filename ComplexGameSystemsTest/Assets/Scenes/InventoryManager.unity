@@ -786,7 +786,7 @@ MonoBehaviour:
   inventoryToDisplay: {fileID: 11400000, guid: 23065508081e6c541b597122d7f2cd1b, type: 2}
   XStart: -100
   YStart: 100
-  ColumnCount: 4
+  ColumnCount: 10
   SpaceBetweenItemsXAxis: 30
   SpaceBetweenItemsYAxis: 30
 --- !u!1 &1416292970

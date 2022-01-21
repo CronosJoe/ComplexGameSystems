@@ -8,7 +8,7 @@ public class DisplayInventory : MonoBehaviour
 {
     public InventoryObject inventoryToDisplay; //because we are using scriptables we can link directly to the inventory
     public int XStart;
-    public int YStart;
+    public int YStart; //probably want to change these to a parented object
     public int ColumnCount; //amount of columns in the display
     public int SpaceBetweenItemsXAxis;
     public int SpaceBetweenItemsYAxis;
@@ -28,7 +28,7 @@ public class DisplayInventory : MonoBehaviour
             tempDisplayObject.GetComponentInChildren<TextMeshProUGUI>().text = inventoryToDisplay.Container[i].amount.ToString("n0");
         }
     }
-    public Vector3 GetPosition(int index) 
+    public Vector3 GetPosition(int index) //this will sort it into a grid based on the other objects in the inventory
     {
         return new Vector3(XStart + (SpaceBetweenItemsXAxis * (index % ColumnCount)), YStart + (-SpaceBetweenItemsYAxis * (index / ColumnCount)), 0f);
     }

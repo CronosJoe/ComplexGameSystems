@@ -1,9 +1,5 @@
 Figure out complex game system
-
-Random Map loader?
 Raycast inventory system
-Draggable object system
-
 I want it to be a system designed for 2D, I don't want to deal with 3d support
 
 Inventory system:
