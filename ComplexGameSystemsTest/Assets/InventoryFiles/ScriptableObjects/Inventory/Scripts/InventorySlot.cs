@@ -4,7 +4,6 @@ using UnityEngine;
 [System.Serializable]
 public class InventorySlot
 {
-    public int ID;
     public ItemObject item;
     public int amount;
     public int amountCap;
@@ -21,5 +20,4 @@ public class InventorySlot
     {
         amount -= value;
     }
-    //TODO cap off with amount cap about when it should move to a new inventroy slot
 }

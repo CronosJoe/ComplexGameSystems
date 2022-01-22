@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: BasicFish
   m_EditorClassIdentifier: 
   prefab: {fileID: 5016163299598576490, guid: 1a3bc4c2a8cfd414e8072341664a93a6, type: 3}
+  cost: 0
   type: 0
-  description: The basic fish created simply to show people how to put it into their
+  description: 'The basic fish created simply to show people how to put it into their
     inventory nothing more nothing less.
+
+'
   restoreHealthValue: 1
