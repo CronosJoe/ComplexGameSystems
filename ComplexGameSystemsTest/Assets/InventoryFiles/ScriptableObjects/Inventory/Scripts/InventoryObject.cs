@@ -13,7 +13,7 @@ public class InventoryObject : ScriptableObject
     {
         for (int i = 0; i < Container.Count; i++) 
         {
-            if(Container[i].item == _item) 
+            if(Container[i].item == _item && Container[i].item.amountCap > Container[i].amount)
             {
                 Container[i].AddAmount(_amount);
                 return;
@@ -24,13 +24,17 @@ public class InventoryObject : ScriptableObject
     //Adding a new inventory slot to the list
     private void AddNewSlot(ItemObject _item, int _amount) 
     {
-        Container.Add(new InventorySlot(_item, _amount));
+        if (!CheckIfInventoryFull()) //to confirm we don't go over cap
+        {
+            Container.Add(new InventorySlot(_item, _amount));
+        }
     }
     //removing items
     public void RemoveAtIndex(int index)
     {
         if(!(Container.Count>=index) && !(index < 0))
         {
+            //For your game add functionality in a shop or here to sell the item or simply drop it
             Container.RemoveAt(index);
         }
     }
@@ -58,5 +62,15 @@ public class InventoryObject : ScriptableObject
         {
             return a.item.cost.CompareTo(b.item.cost);
         });
+    }
+    public void ReplaceItem(int index, ItemObject itemToAdd, int amountToAdd) 
+    {
+        //nothing fancy here just combining method calls so that we can repalce an item if our inventory is too full
+        RemoveAtIndex(index);
+        AddItem(itemToAdd, amountToAdd);
+    }
+    public bool CheckIfInventoryFull() 
+    {//we need to check if the current amount of inventory items is equal to the maximum if it is return true, if it ever goes over we have bigger problems
+        return (Container.Count - 1 >= inventorySize);
     }
 }

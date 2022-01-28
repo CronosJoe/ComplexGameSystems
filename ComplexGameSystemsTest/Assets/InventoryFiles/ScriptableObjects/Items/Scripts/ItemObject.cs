@@ -14,4 +14,5 @@ public abstract class ItemObject : ScriptableObject
     public ItemType type; //storing this items type
     [TextArea(15, 20)]
     public string description; //storing the items description
+    public int amountCap; //how much you can stack of each item
 }
