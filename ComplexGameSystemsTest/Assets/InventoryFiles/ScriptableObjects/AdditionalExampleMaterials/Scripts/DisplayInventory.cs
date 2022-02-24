@@ -43,20 +43,20 @@ public class DisplayInventory : MonoBehaviour
     }
     private void UpdateDisplay() 
     {
-        for(int i = 0; i < inventoryCells.Count; i++)
-        {
-            if (i<inventoryToDisplay.Container.Count) 
-            {
-                inventoryCells[i].AmountToDisplay = inventoryToDisplay.Container[i].amount;
-                inventoryCells[i].ImageToDisplay = inventoryToDisplay.Container[i].item.prefab;
-                inventoryDisplay[i].GetComponentInChildren<TMP_Text>().text = inventoryCells[i].AmountToDisplay.ToString("n0");
-                inventoryDisplay[i].GetComponent<Image>().sprite = inventoryCells[i].ImageToDisplay.GetComponent<Image>().sprite;
-            }
-            else 
-            {
-                break; //stop it from checking after hitting the first null because we remove from the end of the inventory list
-            }
-        }
+        //for(int i = 0; i < inventoryCells.Count; i++)
+        //{
+        //    if (i<inventoryToDisplay.Container.Count) 
+        //    {
+        //        inventoryCells[i].AmountToDisplay = inventoryToDisplay.Container[i].amount;
+        //        inventoryCells[i].ImageToDisplay = inventoryToDisplay.Container[i].item.prefab;
+        //        inventoryDisplay[i].GetComponentInChildren<TMP_Text>().text = inventoryCells[i].AmountToDisplay.ToString("n0");
+        //        inventoryDisplay[i].GetComponent<Image>().sprite = inventoryCells[i].ImageToDisplay.GetComponent<Image>().sprite;
+        //    }
+        //    else 
+        //    {
+        //        break; //stop it from checking after hitting the first null because we remove from the end of the inventory list
+        //    }
+        //}
     }
     public Vector3 GetPosition(int index) //this will display it in a grid based on the other objects in the inventory
     {
